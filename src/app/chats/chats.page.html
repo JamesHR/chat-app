@@ -6,6 +6,12 @@
 
 <ion-content [fullscreen]="true">
   <ion-list lines="none">
-    <app-item-chat username="James HR" message="Bienvenido a la práctica chatApp" date="16:20" avatarUrl="https://ionicframework.com/docs/img/demos/avatar.svg"></app-item-chat>
+    <app-item-chat
+      *ngFor="let chat of chats"
+      [username]="chat.username"
+      [message]="chat.message"
+      [date]="chat.date"
+      [avatarUrl]="chat.avatarUrl"  
+    ></app-item-chat>
   </ion-list>
 </ion-content>
