@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-item-chat',
   templateUrl: './item-chat.component.html',
   styleUrls: ['./item-chat.component.scss'],
+  standalone: false
 })
 export class ItemChatComponent  implements OnInit {
 
