@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-item-chat',
@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   standalone: false
 })
 export class ItemChatComponent  implements OnInit {
+
+  @Input() username: string = '';
+  @Input() message: string = '';
+  @Input() avatarUrl: string = '';
+  @Input() date: string = '';
 
   constructor() { }
 

@@ -1,16 +1,16 @@
 <ion-item>
   <ion-avatar aria-hidden="true" slot="start">
-    <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    <img alt="" [src]="avatarUrl" />
   </ion-avatar>
   <ion-label>
-    <strong>James HR</strong>
+    <strong>{{username}}</strong>
     <br/>
     <ion-note color="medium" 
         class="ion-text-wrap">
-        Bienvenido a la práctica chatApp
+        {{message}}
     </ion-note>
   </ion-label>
   <div class="metadata-end-wrapper" slot="end">
-    <ion-note color="medium">12:00</ion-note>
+    <ion-note color="medium">{{date}}</ion-note>
   </div>
 </ion-item>
