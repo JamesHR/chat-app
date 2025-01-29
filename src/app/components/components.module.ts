@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ItemChatComponent } from '../item-chat/item-chat.component';
+import { IonicModule } from '@ionic/angular';
 
 
 
@@ -9,7 +10,8 @@ import { ItemChatComponent } from '../item-chat/item-chat.component';
     ItemChatComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
   ],
   exports: [
     ItemChatComponent
